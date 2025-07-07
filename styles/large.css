@@ -34,4 +34,36 @@
     .course-filters {
         justify-content: center;
     }
+
+    .about-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-photo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-photo {
+        flex: 1;
+    }
+
+    .about-text {
+        margin-right: 1rem;
+    }
+
+    .about-photo img {
+        width: 100%;
+        max-width: 150px;
+    }
 }
