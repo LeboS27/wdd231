@@ -35,35 +35,26 @@
         justify-content: center;
     }
 
-    .about-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+    @media (min-width: 768px) {
+        .about-container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    .about-photo {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
+        .about-text,
+        .about-photo {
+            flex: 1;
+        }
 
-    .about-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+        .about-text {
+            margin-right: 1rem;
+        }
 
-    .about-text,
-    .about-photo {
-        flex: 1;
-    }
-
-    .about-text {
-        margin-right: 1rem;
-    }
-
-    .about-photo img {
-        width: 100%;
-        max-width: 150px;
+        .about-photo img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
     }
 }

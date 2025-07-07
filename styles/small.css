@@ -111,19 +111,6 @@ footer .socials a {
     gap: 1rem;
 }
 
-.about-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
 .about-text,
 .about-photo {
     width: 100%;
