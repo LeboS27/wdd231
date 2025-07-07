@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd231 - Sebata</title>
+    <meta name="description" content="Course homepage for WDD231 by Lebohang Sebata">
+    <meta name="author" content="Lebohang Sebata">
+    <title>Lebohang Sebata - WDD231</title>
+
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <img src="images/logo.webp" alt="Site Logo" class="logo">
+        <span class="site-name">Lebohang Sebata</span>
+        <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+    </header>
 
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber of Commerce</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>Welcome</h2>
+            <p>This is the course homepage for WDD231.</p>
+        </section>
+
+        <section>
+            <h2>Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+            <div id="courseCards"></div>
+            <p>Total Credits: <span id="totalCredits">0</span></p>
+        </section>
+
+        <section>
+            <h2>About This Site</h2>
+            <p>Built using HTML, CSS, and JavaScript. Fully responsive and accessible.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/LeboS27" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lebohangsebata1234/" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Lebohang Sebata | Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

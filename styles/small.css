@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #005f73;
+    --accent-color: #0a9396;
+    --background-color: #f0fdfa;
+    --text-color: #001219;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+.course-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer .socials a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.course-card {
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.course-card.completed {
+    background-color: #d8f3dc;
+    border-color: green;
+}
