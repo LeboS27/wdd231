@@ -1,0 +1,58 @@
+[
+    {
+        "name": "So Sweet Bakert",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+292 46 17 89",
+        "website": "https://sosweet.com",
+        "image": "so-sweet.png",
+        "membership": 53
+    },
+    {
+        "name": "Bakers Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://bakers-inn.com",
+        "image": "bakers-inn.png",
+        "membership": 7
+    },
+    {
+        "name": "Cream Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://cream-inn.com",
+        "image": "cream-inn.png",
+        "membership": 27
+    },
+    {
+        "name": "Chicken Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://chicken-inn.com",
+        "image": "chicker-inn.png",
+        "membership": 79
+    },
+    {
+        "name": "Pizza Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://pizza-inn.com",
+        "image": "pizza-inn.png",
+        "membership": 86
+    },
+    {
+        "name": "Fish Inn",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://fish-inn.com",
+        "image": "fish-inn.png",
+        "membership": 12
+    },
+    {
+        "name": "Nandos",
+        "address": "Between 9th and 10th Avenue",
+        "phone": "+263 89 17 46",
+        "website": "https://nandos.com",
+        "image": "nandos.png",
+        "membership": 45
+    }
+]
