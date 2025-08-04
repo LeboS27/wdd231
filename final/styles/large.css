@@ -1,0 +1,41 @@
+/* Large screen styles (1024px and above) */
+@media screen and (min-width: 1024px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .monitor-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sensor-card {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Zimbabwe Environmental Management Agency (EMA)",
+        "url": "https://www.ema.co.zw/",
+        "description": "Official environmental protection agency of Zimbabwe, providing reports and regulations on water quality and pollution."
+    },
+    {
+        "id": 2,
+        "title": "Water Quality Association",
+        "url": "https://www.wqa.org/",
+        "description": "International organization dedicated to improving water quality through research and public awareness."
+    },
+    {
+        "id": 3,
+        "title": "DHT11 Sensor Datasheet",
+        "url": "https://cdn.sparkfun.com/datasheets/Sensors/Temperature/DHT11.pdf",
+        "description": "Technical specifications for the DHT11 temperature and humidity sensor used in MvuraEye."
+    },
+    {
+        "id": 4,
+        "title": "MQ Gas Sensor Documentation",
+        "url": "https://components101.com/sensors/mq-2-gas-sensor",
+        "description": "Information about MQ series gas sensors, including usage and calibration."
+    },
+    {
+        "id": 5,
+        "title": "Ph Sensor Theory and Usage",
+        "url": "https://www.sensorex.com/ph-sensors",
+        "description": "Details on pH sensor principles and practical applications in water monitoring."
+    }
+]

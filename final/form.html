@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MvuraEye | Submit Report</title>
+    <meta name="description" content="Submit a water quality report to MvuraEye." />
+    <meta name="author" content="Lebohang Sebata" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <h1>MvuraEye</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="monitor.html">Monitor</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html" class="active">Submit</a></li>
+            <li><a href="../index.html">Back to W01</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Submit a Water Quality Report</h2>
+            <form action="form-action.html" method="get">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="e.g., Umguza River, Bulawayo" required />
+
+                <label for="type">Type of Concern:</label>
+                <select id="type" name="concern">
+                    <option value="chemical">Chemical Spill</option>
+                    <option value="discoloration">Water Discoloration</option>
+                    <option value="smell">Bad Smell</option>
+                    <option value="unknown">Other/Unknown</option>
+                </select>
+
+                <label for="message">Additional Details:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe what you observed..."
+                    required></textarea>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MvuraEye |</p>
+    </footer>
+</body>
+
+</html>

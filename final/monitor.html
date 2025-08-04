@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MvuraEye | Monitor</title>
+    <meta name="description" content="View real-time water and air quality data with MvuraEye." />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/monitor.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>MvuraEye</h1>
+        <p>Real-Time Environmental Data</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="monitor.html" class="active">Monitor</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">Submit</a></li>
+            <li><a href="../index.html">Back to W01</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="monitor-grid">
+            <div class="sensor-card">
+                <h2>pH Level</h2>
+                <p id="ph-reading">Loading...</p>
+            </div>
+
+            <div class="sensor-card">
+                <h2>Gas Sensor (MQ-2)</h2>
+                <p id="mqs-reading">Loading...</p>
+            </div>
+
+            <div class="sensor-card">
+                <h2>Temperature</h2>
+                <p id="temp-reading">Loading...</p>
+            </div>
+
+            <div class="sensor-card">
+                <h2>Humidity</h2>
+                <p id="humidity-reading">Loading...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MvuraEye | <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+
+</html>

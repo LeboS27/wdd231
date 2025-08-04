@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MvuraEye | Form Response</title>
+    <meta name="description" content="View your submitted form details." />
+    <meta name="author" content="Lebohang Sebata" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <h1>MvuraEye</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="monitor.html">Monitor</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">Submit</a></li>
+            <li><a href="../index.html">Back to W01</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Form Submission Received</h2>
+            <div id="output">
+                <!-- JavaScript will populate this -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MvuraEye | <a href="attributions.html">Attributions</a> | <a
+                href="https://youtu.be/YOUR_VIDEO_ID" target="_blank">Video</a></p>
+    </footer>
+
+    <script>
+        const output = document.getElementById('output');
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.toString() === '') {
+            output.innerHTML = "<p>No data was submitted. Please return to the form.</p>";
+        } else {
+            const list = document.createElement('ul');
+            for (const [key, value] of params.entries()) {
+                const item = document.createElement('li');
+                item.textContent = `${key}: ${value}`;
+                list.appendChild(item);
+            }
+            output.appendChild(list);
+        }
+    </script>
+</body>
+
+</html>

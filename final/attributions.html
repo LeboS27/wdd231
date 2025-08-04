@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MvuraEye | Attributions</title>
+    <meta name="description" content="Sources and attributions for data and content used in MvuraEye." />
+    <meta name="author" content="Lebohang Sebata" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <script type="module" defer>
+        import { fetchData } from './scripts/dataFetch.js';
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const container = document.getElementById('sources-list');
+            const sources = await fetchData('data/sources.json');
+
+            if (sources && sources.length) {
+                sources.forEach(source => {
+                    const article = document.createElement('article');
+                    article.className = 'source-item';
+
+                    article.innerHTML = `
+            <h2>${source.title}</h2>
+            <p>${source.description}</p>
+            <p><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.url}</a></p>
+          `;
+
+                    container.appendChild(article);
+                });
+            } else {
+                container.textContent = 'No sources available to display.';
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>MvuraEye Attributions</h1>
+        <p>Sources and references for data, images, and information used.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">Submit</a></li>
+            <li><a href="monitor.html">Monitor</a></li>
+            <li><a href="attributions.html" class="active">Attributions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sources-list" aria-live="polite" aria-label="List of data sources and attributions">
+            <p>Loading sources...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MvuraEye | All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
